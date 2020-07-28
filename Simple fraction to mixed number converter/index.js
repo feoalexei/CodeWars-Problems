@@ -1,7 +1,7 @@
 // 25 ////////// Simple fraction to mixed number converter //////////
 
 function mixedFraction(s){
-  const arr = s.split('/');
+  const arr = s.split('/').map(e => Math.abs(e));
   const int = Math.floor(arr[0] / arr[1]);
   let nom = arr[0] % arr[1];
   denom = arr[1];
@@ -12,15 +12,12 @@ function mixedFraction(s){
     denom = denom / diff;
   }
 
-  // if (int) {
-  //   nom ? `${int} ${nom}/${denom}` : `${int}`
-  // }
-
- 
-  return `${int} ${nom}/${denom}`
-  // return int && nom 
-  //   ? `${int} ${nom}/${denom}`
-  //   :  int ? `${int}` : `${nom}/${denom}`
+  console.log(s.match(/-/g).length);
+  if(+arr[0]) {
+    return int && nom 
+      ? `${int} ${nom}/${denom}`
+      :  int ? `${int}` : `${nom}/${denom}`
+  } else return '0'
 }
 
-console.log(mixedFraction('42/9'));
+console.log(mixedFraction('-42/-9'));
