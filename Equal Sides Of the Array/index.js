@@ -11,15 +11,6 @@ function findEvenIndex(arr){
 
 console.log(findEvenIndex([1,2,3,4,3,2,1]));
 
-// const arr = [1,2,3,4,3,2,1];
-// const arrZero = [20,10,-80,10,10,15,35];
-// let index = '';
-
-// for (let i = 1; i < arrZero.length; i++) {
-//     if (!(arrZero.slice(i+1).reduce((a,c) => a + c))) index = i - 1;
-// }
-
-// console.log(index);
 
 
 

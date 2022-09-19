@@ -12,7 +12,6 @@ function lowestProduct(input) {
    return input.length >= 4 ? Math.min(...allProducts) : "Number is too small"
 }
 
-
 console.log(lowestProduct("2345611117899"));
 
 

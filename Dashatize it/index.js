@@ -6,8 +6,6 @@ function dashatize(num) {
         .replace(/-+/g, "-")
         .replace(/^-|-$/g, "")
 }
-        
-
 
 console.log(dashatize(6815));
 

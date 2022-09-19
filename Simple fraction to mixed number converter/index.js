@@ -12,7 +12,16 @@ function mixedFraction(s){
     denom = denom / diff;
   }
 
-  console.log(s.match(/-/g).length);
+  if (!(+arr[1])) throw new Error('zeroDivision');
+
+  if (s.includes('-') && s.match(/-/g).length <= 1) {
+    return int && nom 
+      ? `-${int} ${nom}/${denom}`
+      :  int ? `-${int}` : `${nom}/${denom}`
+  }
+  
+
+
   if(+arr[0]) {
     return int && nom 
       ? `${int} ${nom}/${denom}`

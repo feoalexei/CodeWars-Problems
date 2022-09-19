@@ -8,7 +8,7 @@ const sum_pairs = function(ints, s) {
     }
 }
 
-console.log(sum_pairs([10, 5, 2, 3, 7, 5],         10));
+console.log(sum_pairs([10, 5, 2, 3, 7, 5], 10));
 
 
 

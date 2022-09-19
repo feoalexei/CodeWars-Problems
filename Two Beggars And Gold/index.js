@@ -16,8 +16,6 @@ function distributionOf(golds){
   return [A, B];
 }
 
-
-
 console.log(distributionOf([4,2,9,5,2,7]));
 
 

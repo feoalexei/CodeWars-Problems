@@ -14,19 +14,12 @@ function highestRank(arr){
       highestNum = x;
     }
   })
-  return highestNum;
+  return +highestNum;
 }
 
 console.log(highestRank([12, 10, 8, 7, 6, 4, 10, 10, 12]));
 
-// const arr = [12, 10, 8, 12, 7, 6, 4, 10, 12];
-// let obj = {};
-// for (let i = 0; i < arr.length; i++) {
-//   let elem = arr[i]
-//   obj[elem] = obj[elem] ? obj[elem] + 1 : 1;
-//  }
 
-//  console.log(obj);
 
 
 
